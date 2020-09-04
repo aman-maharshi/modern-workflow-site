@@ -4,3 +4,5 @@
 @import "./base/mixins";
 @import "./modules/large-hero";
 @import "./modules/btn";
+@import "./modules/wrapper";
+@import "./modules/page-section";
