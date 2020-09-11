@@ -1,6 +1,6 @@
 @import "normalize.css";
-@import "./base/global";
 @import "./base/variables";
+@import "./base/global";
 @import "./base/mixins";
 @import "./modules/large-hero";
 @import "./modules/btn";
@@ -8,3 +8,4 @@
 @import "./modules/page-section";
 @import "./modules/headline";
 @import "./modules/row";
+@import "./modules/generic-content-container";

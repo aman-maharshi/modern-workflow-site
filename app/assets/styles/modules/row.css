@@ -13,11 +13,18 @@
         flex: 2;
     }
 
+    &__b-margin-until-medium {
+        margin-bottom: 1rem;
+    }
+
     @mixin atMedium {
         flex-direction: row;
 
         &__text-content {
             padding-left: 3rem;
+        }
+        &__b-margin-until-medium {
+            margin-bottom: 0;
         }
     }
 }
