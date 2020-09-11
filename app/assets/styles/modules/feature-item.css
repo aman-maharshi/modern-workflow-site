@@ -14,7 +14,7 @@
         }
     }
 
-    @mixin atMedium {
+    @mixin atSmall {
         flex-direction: row;
         padding: 1rem;
 
