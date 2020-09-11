@@ -1,0 +1,29 @@
+.feature-item {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        text-align: center;
+    }
+
+    &__content {
+        h3 {
+            font-size: 1.85rem;
+            font-weight: 300;
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    @mixin atMedium {
+        flex-direction: row;
+        padding: 1rem;
+
+        &__image {
+            flex: 1;
+            padding-top: 2rem;
+        }
+        &__content {
+            flex: 3;
+        }
+    }
+}

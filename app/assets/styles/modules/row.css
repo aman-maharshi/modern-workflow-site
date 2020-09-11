@@ -9,6 +9,10 @@
         align-items: center;
     }
 
+    &__6 {
+        flex: 1;
+    }
+
     &__8 {
         flex: 2;
     }
