@@ -1,0 +1,8 @@
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0 1.8rem 1px 1.8rem;
+
+    @mixin atMedium {
+        margin: 0 2rem;
+    }
+}

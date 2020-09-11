@@ -2,16 +2,25 @@
     font-size: 2.75rem;
     font-weight: 300;
     text-align: center;
-
-    @mixin atSmall {
-        font-size: 3.75rem;
-    }
+    display: flex;
+    flex-direction: column;
 
     strong {
         font-weight: 500;
     }
 
-    &__icon {
-        margin-right: 0.5rem;
+    &--blue {
+        color: $mainBlue;
+    }
+
+    @mixin atSmall {
+        font-size: 3.75rem;
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: center;
+
+        &__icon {
+            margin-right: 2rem;
+        }
     }
 }
