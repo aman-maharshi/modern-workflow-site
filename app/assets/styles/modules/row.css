@@ -3,9 +3,9 @@
     flex-direction: column;
 
     &__4 {
-        flex: 1.25;
         display: flex;
-        justify-content: center;
+        flex: 1.25;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
     }

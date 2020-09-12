@@ -11,7 +11,11 @@
     }
 
     &--testimonials {
-        background: url("assets/images/testimonials-bg.jpg") no-repeat top center;
-        background-size: cover;
+        background-color: #e0e6ef;
+
+        @mixin atMedium {
+            background: url("assets/images/testimonials-bg.jpg") no-repeat top center;
+            background-size: cover;
+        }
     }
 }
