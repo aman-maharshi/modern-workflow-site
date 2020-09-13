@@ -1,0 +1,84 @@
+.site-header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+
+    &__menu-content {
+        display: none;
+    }
+
+    &__menu-icon {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        height: 20px;
+        width: 20px;
+        background: white;
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
+    &__menu-icon:hover {
+        cursor: pointer;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__logo {
+        position: absolute;
+        background: $mainBlue;
+        padding: 10px 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @mixin atMedium {
+        background-color: rgba($mainBlue, 0.3);
+
+        &__logo {
+            left: auto;
+            transform: translateX(0);
+            padding: 20px 30px;
+        }
+
+        &__menu-content {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    &__nav {
+        margin-left: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+            padding: 10px;
+        }
+        a:hover {
+            color: $mainOrange;
+        }
+    }
+
+    &__btn {
+        margin: 10px 0 10px 1rem;
+    }
+}
