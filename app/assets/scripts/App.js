@@ -1,10 +1,15 @@
 import "../styles/styles.css"
 import MobileMenu from "./modules/MobileMenu"
+// import RevealOnScrollCustom from "./modules/RevealOnScrollCustom"
 import RevealOnScroll from "./modules/RevealOnScroll"
 
 if (module.hot) {
     module.hot.accept()
 }
+
+new MobileMenu()
+// new RevealOnScrollCustom()
+new RevealOnScroll()
 
 /* 
 // custom mobile menu toggle functionality
@@ -16,6 +21,3 @@ toggleBtn.addEventListener("click", () => {
 })
 
 */
-
-new MobileMenu()
-new RevealOnScroll()
