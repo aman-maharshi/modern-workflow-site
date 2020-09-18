@@ -1,6 +1,5 @@
 import "../styles/styles.css"
 import MobileMenu from "./modules/MobileMenu"
-// import RevealOnScrollCustom from "./modules/RevealOnScrollCustom"
 import RevealOnScroll from "./modules/RevealOnScroll"
 
 if (module.hot) {
@@ -8,8 +7,8 @@ if (module.hot) {
 }
 
 new MobileMenu()
-// new RevealOnScrollCustom()
-new RevealOnScroll()
+new RevealOnScroll(".feature-item")
+new RevealOnScroll(".testimonial")
 
 /* 
 // custom mobile menu toggle functionality
