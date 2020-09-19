@@ -53,3 +53,26 @@
         transform: translateY(0);
     }
 }
+
+/*
+    STICKY SITE HEADER
+*/
+
+.site-header {
+    @mixin atMedium {
+        position: fixed;
+
+        &--dark-bg {
+            background: rgba(23, 51, 72, 0.85);
+        }
+
+        &__logo {
+            transition: transform 0.3s ease;
+        }
+
+        &--dark-bg &__logo {
+            transform: scale(0.6);
+            top: -22px;
+        }
+    }
+}
