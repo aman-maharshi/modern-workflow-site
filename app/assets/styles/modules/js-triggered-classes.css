@@ -76,3 +76,11 @@
         }
     }
 }
+
+/*
+    HIGHTLIGHT NAV ON SCROLL
+*/
+
+.is-current-link {
+    color: $mainOrange !important;
+}
