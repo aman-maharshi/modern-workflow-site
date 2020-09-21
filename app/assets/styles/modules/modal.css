@@ -1,0 +1,65 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+    display: none;
+    /* display: flex; */
+
+    &__inner {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__description {
+        font-size: 1.3rem;
+        line-height: 1.65;
+        font-weight: 300;
+        margin-top: 0;
+        max-width: 600px;
+        text-align: center;
+        margin-top: -1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        transform: scaleX(1.2);
+        transform-origin: 100% 0;
+        color: $mainBlue;
+        cursor: pointer;
+
+        &:hover {
+            color: $mainOrange;
+        }
+    }
+
+    .social-icons {
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+
+        @mixin atMedium {
+            width: 400px;
+        }
+
+        &__icon {
+            background: $mainOrange;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+        }
+    }
+}
